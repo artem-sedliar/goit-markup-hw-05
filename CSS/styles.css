@@ -513,8 +513,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white-color);
-  fill: currentColor;
+  fill: var(--border-color-client);
   transition: 250ms var(--animation-time);
 }
 .instagram:hover,
@@ -563,6 +562,7 @@ header {
   fill: currentColor;
   border-radius: 4px;
   fill: var(--border-color-client);
+  transition: 250ms var(--animation-time);
 }
 
 .client-icon {
@@ -658,6 +658,7 @@ header {
   background: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
+  fill: var(--white-color);
   transition: 250ms var(--animation-time);
 }
 
