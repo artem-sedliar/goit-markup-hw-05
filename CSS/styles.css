@@ -559,9 +559,8 @@ header {
 /* Regular customers */
 .logo1 {
   justify-content: center;
-  fill: currentColor;
   border-radius: 4px;
-  fill: var(--border-color-client);
+  fill: currentColor;
   transition: 250ms var(--animation-time);
 }
 
@@ -569,7 +568,6 @@ header {
   list-style: none;
   justify-content: center;
   display: flex;
-  fill: currentColor;
 }
 .section-clients {
   padding-top: 94px;
@@ -598,13 +596,12 @@ header {
   border-radius: 4px;
   display: flex;
   align-items: center;
-  fill: currentColor;
+  color: var(--border-color-client);
   transition: 250ms var(--animation-time);
 }
 .brand:hover,
 .brand:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
   color: var(--accent-color);
 }
 .logo1:hover,
