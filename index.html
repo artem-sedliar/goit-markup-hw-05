@@ -23,7 +23,7 @@
             <nav class="top">
                 <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
                 <ul class="list-link">
-                    <li class="reference-link"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="reference-link"><a href="./index.html" class="link-current">Студия</a></li>
                     <li class="reference-link"><a href="./portfolio.html" class="link"> Портфолио</a></li>
                     <li class="reference-link"><a href="" class="link-last">Контакты</a></li>
                 </ul>
@@ -49,7 +49,17 @@
         <!-- Герой -->
         <section class="hero">
             <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button primary" type="button">Заказать услугу</button>
+            <button data-modal-open class="button primary" type="button">Заказать услугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <div data-modal-close class="close">
+                        <svg class="icon-close" width="30" height="30">
+                            <use href="./images/symbol-defs.svg#close-1"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!--секция однотипного контента-->
@@ -128,9 +138,28 @@
             <div class="container">
                 <h2 class="subtitle">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li class="image-pic"><img src="./images/img1.jpg" alt="ipad очки клавиатура" width="370" /></li>
-                    <li class="image-pic"><img src="./images/img2.jpg" alt="смартфон и макбук" width="370" /></li>
-                    <li class="image-pic"><img src="./images/img3.jpg" alt="ipad мишь ручка в руке" width="370" /></li>
+
+                    <li class="image-pic"><img src="./images/img1.jpg" alt="ipad очки клавиатура" width="370" />
+                        <div class="img-text">
+                            <p class="text-label">
+                                Десктопные приложения
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="image-pic"><img src="./images/img2.jpg" alt="смартфон и макбук" width="370" />
+                        <div class="img-text">
+                            <p class="text-label">
+                                Мобильные приложения
+                            </p>
+                        </div>
+                    </li>
+                    <li class="image-pic"><img src="./images/img3.jpg" alt="ipad мишь ручка в руке" width="370" />
+                        <div class="img-text">
+                            <p class="text-label">
+                                Дизайнерские решения </p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -319,6 +348,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
